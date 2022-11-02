@@ -15,6 +15,7 @@ from discord.ext import commands, tasks
 from options_fricen import *
 
 intents = discord.Intents.default()
+intents.message_content = True
 intents.members = True
 
 bot = commands.Bot(description=Description, command_prefix=CommandPrefix, pm_help = True, intents=intents)
